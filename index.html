@@ -47,7 +47,10 @@
       <main>
         <section class="subtitulo">
           <h3>Ingredientes destacados de la semana</h3>
-          <h6 class="sub2">Pequeños tesoros naturales que potencian el sabor y la salud en cada receta.</h6>
+          <h6 class="sub2">
+            Pequeños tesoros naturales que potencian el sabor y la salud en cada
+            receta.
+          </h6>
         </section>
 
         <section>
@@ -162,35 +165,23 @@
           </div>
         </section>
 
-        <section class="subtitulo">
-          <h3>Nuestras recetas más visitadas:</h3>
-        </section>
 
-        <!-- cards recetas destacadas -->
-        <section id="cards-container2">
-          <div class="card">
-            <img src="item.img" class="card-img-top" alt="item.titulo" />
-            <div class="card-body">
-              <h5>item.titulo</h5>
-              <p class="card-text">item.descripcion</p>
-            </div>
-          </div>
+        <section class="tips">
 
-          <div class="card">
-            <img src="item.img" class="card-img-top" alt="item.titulo" />
-            <div class="card-body">
-              <h5>item.titulo</h5>
-              <p class="card-text">item.descripcion</p>
-            </div>
-          </div>
+          <!-- TIPS DEL INDEX -->
+          <section>
+            <h3> <br><br>Tips de Pastelería para el Éxito Asegurado: <br> <br></h3>
+            <ul id="tips-list"></ul>
+          </section>
 
-          <div class="card">
-            <img src="item.img" class="card-img-top" alt="item.titulo" />
-            <div class="card-body">
-              <h5>item.titulo</h5>
-              <p class="card-text">item.descripcion</p>
-            </div>
-          </div>
+          <script src="tips-index.js"></script>
+          <script>
+            const ulTips = document.getElementById("tips-list");
+            tipsPasteleria.forEach((tip) => {
+              ulTips.innerHTML += `<li>${tip.consejo}</li> </br>`;
+            });
+
+          </script>
         </section>
       </main>
 

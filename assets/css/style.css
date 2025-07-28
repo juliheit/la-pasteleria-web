@@ -253,6 +253,11 @@ h6 {
 .receta-preparacion {
   padding-bottom: 3em;
 }
+
+.tips {
+  padding: 1em 12em 1em 12em;
+}
+
 /* Footer............................................................... */
 
 footer {
