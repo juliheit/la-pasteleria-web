@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuestras recetas</title>
+
+    <!-- link de bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+  </head>
+
+  <body class="fondoBody">
+
+    <div id="contenedor">
+      <header>
+        <div class="header-top">
+          <button class="abrir-menu" id="abrir">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+        <nav class="nav" id="nav">
+          <button class="cerrar-menu" id="cerrar">
+            <i class="bi bi-x-lg"></i>
+          </button>
+          <ul id="nav-list">
+            <li><a href="index.html">Inicio </a></li>
+          </ul>
+          <ul class="derecha" id="nav-list">
+            <li><a href="recetas.html" class="pagina-actual">Recetas</a></li>
+            <li><a href="nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="subtitulo">
+          <h2>Nuestras recetas</h2>
+          <h6 class="sub2">Descubre los secretos de nuestras deliciosas creaciones</h6>
+        </section>
+
+        <section id="cards-container">
+          <!-- agregar id= cards-container, y borrar todo lo de abajo y pasarlo al js y la api -->
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Avenida Corrientes 1355. © 2025 Todos los derechos reservados.
+        </p>
+      </footer>
+    </div>
+
+    <!-- Páginas js -->
+    <script src="index.js"></script>
+    <script src="cards.js"></script>
+
+    <!-- scripts de bootstraps -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>

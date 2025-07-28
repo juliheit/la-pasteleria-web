@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bizcochuelo de Vainilla</title>
+
+    <!-- link de bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="fondoBody">
+    <div id="contenedor">
+      <header>
+        <div class="header-top">
+          <button class="abrir-menu" id="abrir">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+        <nav class="nav" id="nav">
+          <button class="cerrar-menu" id="cerrar">
+            <i class="bi bi-x-lg"></i>
+          </button>
+          <ul id="nav-list">
+            <li><a href="index.html">Inicio </a></li>
+          </ul>
+          <ul class="derecha" id="nav-list">
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        
+        <div class="volver-recetas-contenedor">
+          <a href="recetas.html" class="boton-volver-recetas">
+            <i class="bi bi-arrow-left"></i> Volver a la lista de recetas</a>
+        </div>
+
+        <section class="titulo-receta-individual">
+          <h2>Bizcochuelo de Vainilla Esponjoso</h2>
+          <h6 class="sub2">
+            La receta infalible para un bizcochuelo clásico, suave y aireado. Perfecto como base para tortas de cumpleaños o simplemente para disfrutar con una taza de café.
+          </h6>
+        </section>
+
+        <section class="receta-imagen">
+            <img src="assets/img/bizcochuelo.jpg" alt="Bizcochuelo de Vainilla recién horneado y esponjoso">
+        </section>
+
+        <section class="receta-detalles">
+            <p><strong>Tiempo de preparación:</strong> 20 minutos</p>
+            <p><strong>Tiempo de cocción:</strong> 35-40 minutos</p>
+            <p><strong>Porciones:</strong> 8-10</p>
+            <p><strong>Dificultad:</strong> Fácil</p>
+        </section>
+
+        <hr> <section class="receta-ingredientes">
+            <h4>Ingredientes</h4>
+            <ul>
+                <li>250g de harina 0000 (todo uso)</li>
+                <li>250g de azúcar</li>
+                <li>4 huevos grandes</li>
+                <li>125ml de leche entera</li>
+                <li>125ml de aceite vegetal o manteca derretida</li>
+                <li>1 cucharada sopera de esencia de vainilla</li>
+                <li>1 cucharada de polvo de hornear</li>
+                <li>1 pizca de sal</li>
+            </ul>
+        </section>
+
+        <hr> <section class="receta-preparacion">
+            <h4>Preparación</h4>
+            <p>
+                En un bol grande, batir los huevos con el azúcar hasta obtener una mezcla pálida y espumosa. <br>
+                Incorporar la esencia de vainilla, la leche y el aceite (o manteca derretida) y mezclar bien. <br>
+                En otro recipiente, tamizar la harina con el polvo de hornear y la pizca de sal. <br>
+                Añadir los ingredientes secos a la mezcla líquida de a poco, integrando con movimientos envolventes para no bajar el batido. No batir en exceso. <br>
+                Verter la mezcla en un molde previamente enmantecado y enharinado (de unos 24cm de diámetro). <br>
+                Hornear en horno precalentado a 170°C (horno medio) durante 35-40 minutos, o hasta que al insertar un palillo en el centro, este salga limpio. <br>
+               Retirar del horno, dejar enfriar unos minutos en el molde y luego desmoldar sobre una rejilla para que enfríe completamente.
+            </p>
+        </section>
+
+
+      </main>
+
+      <footer>
+        <p>Avenida Corrientes 1355. © 2025 Todos los derechos reservados.</p>
+      </footer>
+    </div>
+
+    <!-- Páginas js -->
+    <script src="index.js"></script>
+    <script src="cards.js"></script>
+
+    <!-- scripts de bootstraps -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

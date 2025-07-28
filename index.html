@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Pastelería</title>
+
+    <!-- link de bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="fondoBody">
+    <div id="contenedor">
+      <header>
+        <div class="header-top">
+          <button class="abrir-menu" id="abrir">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+        <nav class="nav" id="nav">
+          <button class="cerrar-menu" id="cerrar">
+            <i class="bi bi-x-lg"></i>
+          </button>
+          <ul id="nav-list">
+            <li><a href="index.html" class="pagina-actual">Inicio </a></li>
+          </ul>
+          <ul class="derecha" id="nav-list">
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="subtitulo">
+          <h3>Ingredientes destacados de la semana</h3>
+          <h6 class="sub2">Pequeños tesoros naturales que potencian el sabor y la salud en cada receta.</h6>
+        </section>
+
+        <section>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img
+                  src="assets/img/chocolate.jpg"
+                  class="d-block w-100"
+                  alt="Foto de chocolates"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5><b>Chocolate: El Alma de los Postres</b></h5>
+                  <p>
+                    El chocolate, fuente de energía y antioxidantes, es pura
+                    felicidad. Aporta hierro, magnesio y fibra, beneficiando el
+                    ánimo y la salud cardiovascular. Usalo para realzar tus
+                    postres: desde un ganache sedoso, una mousse aireada, o
+                    chispas en galletas, hasta un toque brillante en tartas. Su
+                    versatilidad y profundo sabor son el secreto de pastelería
+                    inolvidable.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="assets/img/frutt.png"
+                  class="d-block w-100"
+                  alt="Imagen de frutos rojos"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5><b>Frutos Rojos: Explosión de Sabor y Color</b></h5>
+                  <p>
+                    Los frutos rojos (frutillas, arándanos, frambuesas) son una
+                    explosión de sabor y color, repletos de antioxidantes,
+                    vitaminas (especialmente C y K) y fibra. Ideales para
+                    tartas, mousses, salsas o simplemente para decorar y aportar
+                    frescura y un toque ácido que equilibra el dulzor. Usalos
+                    frescos para resaltar su brillo o cocidos en coulis y
+                    mermeladas para intensificar su sabor.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/frutoseco.jpg"
+                  class="d-block w-100"
+                  alt="Foto de frutos secos"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>
+                    <b>Frutos Secos: Textura y Nutrición en Cada Bocado</b>
+                  </h5>
+                  <p>
+                    Los frutos secos (nueces, almendras, avellanas) son
+                    campeones nutricionales, ricos en grasas saludables,
+                    proteínas, fibra, vitaminas E y B, y minerales como magnesio
+                    y zinc. Aportan una textura crujiente y un sabor tostado
+                    único a galletas, brownies, tortas y granolas. Triturados en
+                    harinas o enteros, son perfectos para añadir profundidad y
+                    un extra nutritivo a tus postres.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="subtitulo">
+          <h3>Nuestras recetas más visitadas:</h3>
+        </section>
+
+        <!-- cards recetas destacadas -->
+        <section id="cards-container2">
+          <div class="card">
+            <img src="item.img" class="card-img-top" alt="item.titulo" />
+            <div class="card-body">
+              <h5>item.titulo</h5>
+              <p class="card-text">item.descripcion</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="item.img" class="card-img-top" alt="item.titulo" />
+            <div class="card-body">
+              <h5>item.titulo</h5>
+              <p class="card-text">item.descripcion</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="item.img" class="card-img-top" alt="item.titulo" />
+            <div class="card-body">
+              <h5>item.titulo</h5>
+              <p class="card-text">item.descripcion</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>Avenida Corrientes 1355. © 2025 Todos los derechos reservados.</p>
+      </footer>
+    </div>
+
+    <!-- Páginas js -->
+    <script src="index.js"></script>
+    <script src="cards.js"></script>
+
+    <!-- scripts de bootstraps -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
