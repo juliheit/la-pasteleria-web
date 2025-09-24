@@ -8,7 +8,10 @@ const iconoFavoritoVacio = "assets/img/favourite.svg";
 const iconoFavoritoLleno = "assets/img/favourite-filled.svg";
 
 // Obtener favoritos desde localStorage
-let favoritas = JSON.parse(localStorage.getItem("favoritas")) || [];
+const currentUser = window.getCurrentUser ? window.getCurrentUser() : null;
+let favoritas = currentUser
+  ? JSON.parse(localStorage.getItem(`favoritas_${currentUser}`) || "[]")
+  : [];
 
 fetch(API_URL)
   .then((respuesta) => {
@@ -30,7 +33,7 @@ fetch(API_URL)
       botonFav.style.position = "absolute";
       botonFav.style.top = "7px";
       botonFav.style.right = "7px";
-      botonFav.style.background = "rgba(255, 255, 255, 0.3";
+      botonFav.style.background = "rgba(255, 255, 255, 0.3)";
       botonFav.style.border = "none";
       botonFav.style.padding = "5px";
       botonFav.style.borderRadius = "5px";
@@ -66,7 +69,12 @@ fetch(API_URL)
           icono.src = iconoFavoritoVacio;
         }
 
-        localStorage.setItem("favoritas", JSON.stringify(favoritas));
+        if (currentUser) {
+          localStorage.setItem(
+            `favoritas_${currentUser}`,
+            JSON.stringify(favoritas)
+          );
+        }
       });
 
       botonFav.appendChild(icono);

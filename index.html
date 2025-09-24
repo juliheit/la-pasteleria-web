@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Pastelería</title>
+    <link rel="icon" href="assets/img/favicon2.png" />
 
     <!-- link de bootstrap -->
     <link
@@ -33,6 +34,28 @@
           <button class="cerrar-menu" id="cerrar">
             <i class="bi bi-x-lg"></i>
           </button>
+          <div
+            class="user-controls"
+            style="
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              margin-left: 1rem;
+            "
+          >
+            <span id="userDisplay" style="display: none">No logueado</span>
+            <button id="loginBtn" class="btn btn-sm btn-outline-dark">
+              Iniciar sesión
+            </button>
+            <button
+              id="logoutBtn"
+              class="btn btn-sm btn-outline-danger"
+              style="display: none"
+            >
+              Cerrar sesión
+            </button>
+          </div>
+          <!-- test: agregar esto en css luego -->
           <ul id="nav-list">
             <li><a href="index.html" class="pagina-actual">Inicio </a></li>
           </ul>
@@ -165,12 +188,13 @@
           </div>
         </section>
 
-
         <section class="tips">
-
           <!-- TIPS DEL INDEX -->
           <section>
-            <h3> <br><br>Tips de Pastelería para el Éxito Asegurado: <br> <br></h3>
+            <h3>
+              <br /><br />Tips de Pastelería para el Éxito Asegurado: <br />
+              <br />
+            </h3>
             <ul id="tips-list"></ul>
           </section>
 
@@ -180,7 +204,6 @@
             tipsPasteleria.forEach((tip) => {
               ulTips.innerHTML += `<li>${tip.consejo}</li> </br>`;
             });
-
           </script>
         </section>
       </main>
@@ -192,6 +215,8 @@
 
     <!-- Páginas js -->
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/auth.js"></script>
     <script src="cards.js"></script>
 
     <!-- scripts de bootstraps -->

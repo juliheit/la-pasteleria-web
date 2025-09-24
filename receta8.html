@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bizcochuelo de Vainilla</title>
+    <link rel="icon" href="assets/img/favicon2.png" />
 
     <!-- link de bootstrap -->
     <link
@@ -33,6 +34,28 @@
           <button class="cerrar-menu" id="cerrar">
             <i class="bi bi-x-lg"></i>
           </button>
+          <div
+            class="user-controls"
+            style="
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              margin-left: 1rem;
+            "
+          >
+            <span id="userDisplay" style="display: none">No logueado</span>
+            <button id="loginBtn" class="btn btn-sm btn-outline-dark">
+              Iniciar sesión
+            </button>
+            <button
+              id="logoutBtn"
+              class="btn btn-sm btn-outline-danger"
+              style="display: none"
+            >
+              Cerrar sesión
+            </button>
+          </div>
+          <!-- test: agregar esto en css luego -->
           <ul id="nav-list">
             <li><a href="index.html">Inicio </a></li>
           </ul>
@@ -45,58 +68,72 @@
       </header>
 
       <main>
-        
         <div class="volver-recetas-contenedor">
           <a href="recetas.html" class="boton-volver-recetas">
-            <i class="bi bi-arrow-left"></i> Volver a la lista de recetas</a>
+            <i class="bi bi-arrow-left"></i> Volver a la lista de recetas</a
+          >
         </div>
 
         <section class="titulo-receta-individual">
           <h2>Bizcochuelo de Vainilla Esponjoso</h2>
           <h6 class="sub2">
-            La receta infalible para un bizcochuelo clásico, suave y aireado. Perfecto como base para tortas de cumpleaños o simplemente para disfrutar con una taza de café.
+            La receta infalible para un bizcochuelo clásico, suave y aireado.
+            Perfecto como base para tortas de cumpleaños o simplemente para
+            disfrutar con una taza de café.
           </h6>
         </section>
 
         <section class="receta-imagen">
-            <img src="assets/img/bizcochuelo.jpg" alt="Bizcochuelo de Vainilla recién horneado y esponjoso">
+          <img
+            src="assets/img/bizcochuelo.jpg"
+            alt="Bizcochuelo de Vainilla recién horneado y esponjoso"
+          />
         </section>
 
         <section class="receta-detalles">
-            <p><strong>Tiempo de preparación:</strong> 20 minutos</p>
-            <p><strong>Tiempo de cocción:</strong> 35-40 minutos</p>
-            <p><strong>Porciones:</strong> 8-10</p>
-            <p><strong>Dificultad:</strong> Fácil</p>
+          <p><strong>Tiempo de preparación:</strong> 20 minutos</p>
+          <p><strong>Tiempo de cocción:</strong> 35-40 minutos</p>
+          <p><strong>Porciones:</strong> 8-10</p>
+          <p><strong>Dificultad:</strong> Fácil</p>
         </section>
 
-        <hr> <section class="receta-ingredientes">
-            <h4>Ingredientes</h4>
-            <ul>
-                <li>250g de harina 0000 (todo uso)</li>
-                <li>250g de azúcar</li>
-                <li>4 huevos grandes</li>
-                <li>125ml de leche entera</li>
-                <li>125ml de aceite vegetal o manteca derretida</li>
-                <li>1 cucharada sopera de esencia de vainilla</li>
-                <li>1 cucharada de polvo de hornear</li>
-                <li>1 pizca de sal</li>
-            </ul>
+        <hr />
+        <section class="receta-ingredientes">
+          <h4>Ingredientes</h4>
+          <ul>
+            <li>250g de harina 0000 (todo uso)</li>
+            <li>250g de azúcar</li>
+            <li>4 huevos grandes</li>
+            <li>125ml de leche entera</li>
+            <li>125ml de aceite vegetal o manteca derretida</li>
+            <li>1 cucharada sopera de esencia de vainilla</li>
+            <li>1 cucharada de polvo de hornear</li>
+            <li>1 pizca de sal</li>
+          </ul>
         </section>
 
-        <hr> <section class="receta-preparacion">
-            <h4>Preparación</h4>
-            <p>
-                En un bol grande, batir los huevos con el azúcar hasta obtener una mezcla pálida y espumosa. <br>
-                Incorporar la esencia de vainilla, la leche y el aceite (o manteca derretida) y mezclar bien. <br>
-                En otro recipiente, tamizar la harina con el polvo de hornear y la pizca de sal. <br>
-                Añadir los ingredientes secos a la mezcla líquida de a poco, integrando con movimientos envolventes para no bajar el batido. No batir en exceso. <br>
-                Verter la mezcla en un molde previamente enmantecado y enharinado (de unos 24cm de diámetro). <br>
-                Hornear en horno precalentado a 170°C (horno medio) durante 35-40 minutos, o hasta que al insertar un palillo en el centro, este salga limpio. <br>
-               Retirar del horno, dejar enfriar unos minutos en el molde y luego desmoldar sobre una rejilla para que enfríe completamente.
-            </p>
+        <hr />
+        <section class="receta-preparacion">
+          <h4>Preparación</h4>
+          <p>
+            En un bol grande, batir los huevos con el azúcar hasta obtener una
+            mezcla pálida y espumosa. <br />
+            Incorporar la esencia de vainilla, la leche y el aceite (o manteca
+            derretida) y mezclar bien. <br />
+            En otro recipiente, tamizar la harina con el polvo de hornear y la
+            pizca de sal. <br />
+            Añadir los ingredientes secos a la mezcla líquida de a poco,
+            integrando con movimientos envolventes para no bajar el batido. No
+            batir en exceso. <br />
+            Verter la mezcla en un molde previamente enmantecado y enharinado
+            (de unos 24cm de diámetro). <br />
+            Hornear en horno precalentado a 170°C (horno medio) durante 35-40
+            minutos, o hasta que al insertar un palillo en el centro, este salga
+            limpio. <br />
+            Retirar del horno, dejar enfriar unos minutos en el molde y luego
+            desmoldar sobre una rejilla para que enfríe completamente.
+          </p>
         </section>
-
-
       </main>
 
       <footer>
@@ -106,6 +143,8 @@
 
     <!-- Páginas js -->
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/auth.js"></script>
     <script src="cards.js"></script>
 
     <!-- scripts de bootstraps -->

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nosotros</title>
+    <link rel="icon" href="assets/img/favicon2.png" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -24,12 +26,37 @@
           <button class="cerrar-menu" id="cerrar">
             <i class="bi bi-x-lg"></i>
           </button>
+          <div
+            class="user-controls"
+            style="
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              margin-left: 1rem;
+            "
+          >
+            <span id="userDisplay" style="display: none">No logueado</span>
+            <button id="loginBtn" class="btn btn-sm btn-outline-dark">
+              Iniciar sesión
+            </button>
+            <button
+              id="logoutBtn"
+              class="btn btn-sm btn-outline-danger"
+              style="display: none"
+            >
+              Cerrar sesión
+            </button>
+          </div>
+          <!-- test: agregar esto en css luego -->
+
           <ul id="nav-list">
             <li><a href="index.html">Inicio </a></li>
           </ul>
           <ul class="derecha" id="nav-list">
             <li><a href="recetas.html">Recetas</a></li>
-            <li><a href="nosotros.html" class="pagina-actual">Sobre nosotros</a></li>
+            <li>
+              <a href="nosotros.html" class="pagina-actual">Sobre nosotros</a>
+            </li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
@@ -41,28 +68,31 @@
         </section>
 
         <section class="nosotros">
-
           <div class="texto">
             <p>
-              En <b><i>La Pastelería</i></b>, creemos que cada postre es una pequeña obra de arte que endulza
+              En <b><i>La Pastelería</i></b
+              >, creemos que cada postre es una pequeña obra de arte que endulza
               el alma y une corazones. Lo que comenzó como un sueño de compartir
               nuestra pasión por la repostería, se transformó en este rincón
               digital donde cada receta es una invitación a crear momentos
-              inolvidables. <br> <br>
+              inolvidables. <br />
+              <br />
 
               Desde el brillo intenso del chocolate hasta la frescura vibrante
               de los frutos rojos, nos dedicamos a explorar y celebrar la magia
               de los ingredientes que hacen posible cada delicia. Aquí,
               encontrarás no solo las recetas más queridas y visitadas, sino
               también el conocimiento y los secretos para que tus creaciones
-              sean siempre un éxito. <br> <br>
+              sean siempre un éxito. <br />
+              <br />
 
               En "La Pastelería", valoramos la tradición y la innovación,
               ofreciéndote desde los clásicos más reconfortantes hasta
               propuestas modernas que despertarán tu creatividad. Queremos ser
               tu fuente de inspiración y tu guía en el maravilloso mundo de la
               pastelería. ¡Gracias por ser parte de nuestra dulce comunidad!
-              <br> <br>
+              <br />
+              <br />
             </p>
           </div>
         </section>
@@ -76,5 +106,18 @@
       </footer>
     </div>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/auth.js"></script>
+    <!-- scripts de bootstraps -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
